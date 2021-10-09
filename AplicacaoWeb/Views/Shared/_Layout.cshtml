@@ -45,17 +45,22 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
     </script>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+    </script>
     <script>
         (function () {
             window.onload = function () {
                 new BlipChat()
-                    .withAppKey('c2VydmljZWNsaWVudGUxOjQ3MWI5ODY2LTBmMDEtNGIwYS1iY2NiLTVkODcwMzIzMTI0Mw==')
+                    .withAppKey('c2VydmljZWNsaWVudDE6OGY4MzQ5NDItMzZjMi00MDhkLWFkYzAtNmI4ZTc4YTI1OTIy')
                     .withButton({ "color": "#2CC3D5", "icon": "" })
-                    .withCustomCommonUrl('https://chat.blip.ai/')
+                    .withCustomCommonUrl('https://thiago-xavier-73nxe.chat.blip.ai/')
                     .build();
             }
         })();
     </script>
+
+
+
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
