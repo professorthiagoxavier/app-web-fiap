@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Service;
 using Service.Atividade;
+using Service.Produto;
 
 namespace AplicacaoWeb
 {
@@ -23,6 +24,8 @@ namespace AplicacaoWeb
             services.AddControllersWithViews();
 
             services.AddScoped<IAtividadeService, AtividadeService>();
+            services.AddScoped<IProdutoService, ProdutoService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Dominio.Model.Produto>
+
+
+<link href="~/css/styles.css" rel="stylesheet" />
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light">Cursos</div>
+        <div class="list-group list-group-flush">
+
+            @foreach (var item in Model)
+            {
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" asp-action="ViewProduto" asp-route-id="@item.Id">@item.Title</a>
+            }
+        </div>
+    </div>
+    @*<div id="page-content-wrapper">
+        
+   
+    </div>*@
+</div>
